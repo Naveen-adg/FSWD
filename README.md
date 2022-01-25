@@ -13,6 +13,19 @@ git - Installation guide https://git-scm.com/ <br/>
 node.js - Download page https://nodejs.org/en/ <br/>
 mongodb https://www.mongodb.com/try/download/community <br/>
 
+## Configure git and connect to github
+Step 1: install git <br>
+Step 2: run the following commands in your command prompt<br>
+       - git clone https://github.com/{username}/FSWD.git <br>
+       - git config --global user.name "{username}" <br>
+       - git config --global user.email "MY_NAME@example.com" <br>
+       - git pull origin main <br>
+       - git add . <br>
+       - git commit -m " Your message" <br>
+       - git push origin main<br>
+Step 3 open Your git hub repository and see the changes
+
+
 ## Introduction to HTML5 
 ### video elemets
 
@@ -66,5 +79,23 @@ HTML svg element is a container for SVG graphics.
 write code(localStorage.html) for above using localStorage <br>
 write code(sessionStorage.html) for above using sessionStorage
 
+## Drag & Drop
+
+Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.
+
+div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" <br>
+img id="drag1" src="logo.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69" <br>
+
+write code (drag_drop.html) to drag logo to div <br>
+
+## Geo Location.
+HTML Geolocation API is used to locate a user's position <br>
+
+Check if Geolocation is supported <br>
+-If supported, run the getCurrentPosition() method. If not, display a message to the user <br>
+-If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)<br>
+-The showPosition() function outputs the Latitude and Longitude<br>
+
+write code (location.html) to print lattitude and longitude <br>
 
 
